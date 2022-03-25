@@ -6,7 +6,7 @@ node.js required.
 npm install
 ```
 ```
-npm build
+npm run build
 ```
 ```
 node ./dist/evaluate.js

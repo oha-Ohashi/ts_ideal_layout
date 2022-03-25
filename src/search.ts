@@ -68,7 +68,7 @@ function getRandomInt(max: number) {
 if(require.main === module) {
 	let nk: io.NaiKeeper = new io.NaiKeeper("./src/config.txt")
 
-	for(let i = 0; i < 1; i++){
+	for(let i = 0; i < 10; i++){
 		const indv: string = search(nk)
 		const keys_to_show = nk.mizuni_modosu(indv.split(""))
 		console.log(keys_to_show)

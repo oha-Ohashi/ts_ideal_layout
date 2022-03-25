@@ -35,6 +35,18 @@ export function evaluate(keys: string): calc.Calculation{
 
 
 if(require.main === module) {
-	disp_eval('ABCDEFGHIJKLMNOPQRSTUVWXYZ____')
-	disp_eval('QWERTYUIOPASDFGHJKL_ZXCVBNM___')
+	console.log("Layout: ABCDE")
+	disp_eval("ABCDEFGHIJKLMNOPQRSTUVWXYZ____")
+	console.log("Layout: QWERTY")
+	disp_eval("QWERTYUIOPASDFGHJKL_ZXCVBNM___")
+	console.log("Layout: Dvorak")
+	disp_eval("___PYFGCRLAOEUIDHTNS_QJKXBMWVZ")
+	console.log("Layout: Colemak-DH")
+	disp_eval("QWFPBJLUY_ARSTGMNEIOZXCDVKH___")
+	console.log("Layout: Eucalyn")
+	disp_eval("QW___MRDYPAOEIUGTKSNZXCVFBHJL_")
+	console.log("Layout: Ohashi rev1")
+	disp_eval("_WBF_MRDYPAOEUIGTKNSZXCV__HJLQ")
+	console.log("Layout: Ohashi rev2")
+	disp_eval("_GMK_QCWP_DNHTRIEAOUVFLSZ_YBXJ")
 }
