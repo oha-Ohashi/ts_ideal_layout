@@ -1,5 +1,3 @@
-import * as fs from 'fs'
-
 export function string_to_xyarray(text: string, keys_in1row: string): number[][]{
 	let res: number[][] = []
 	text.split("").forEach((item) => {
@@ -23,9 +21,8 @@ function c_to_xy(item: string, keys_in1row: string): number[] | null{
 export class NaiKeeper{
 	layout: string[]
 	nai: string[]
-	constructor(path: string){
-		let data: string[]
-			= fs.readFileSync(path).toString().split("")
+	constructor(config: string){
+		let data: string[] = config.split("")
 		data = data.filter(item => item !== "\n")
 		this.layout = data
 		this.nai = this.gen_nai()
