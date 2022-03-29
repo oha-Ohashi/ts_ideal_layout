@@ -29,42 +29,6 @@ class Random {
 }
 const random = new Random(1);
 
-/*
-export function searchAllInOne(): void{
-	let nk: io.NaiKeeper = new io.NaiKeeper("./src/config.txt")
-
-	for(let i = 0; i < 10; i++){
-		const indv: string = search(nk)
-		const keys_to_show = nk.mizuni_modosu(indv.split(""))
-		console.log(keys_to_show)
-		console.log(ev.keys3x10(keys_to_show))
-		console.log(ev.evaluate(keys_to_show).cost_sum)
-	}
-}
-*/
-/*
-export function search(nk: io.NaiKeeper): string{
-	const n_roop: number= 2000
-	let abc: string[] = nk.nai
-	//console.log(abc)
-	let e_max: number = ev.evaluate(
-		nk.mizuni_modosu(abc)
-	).cost_sum
-	//console.log(abc)
-	for(let i = 0; i < n_roop; i++){
-		const new_abc: string[] = swap(abc)
-		const new_e: number = ev.evaluate(
-			nk.mizuni_modosu(new_abc)
-		).cost_sum
-		if(new_e < e_max){
-			//console.log("update!", i)
-			abc = new_abc
-			e_max = new_e
-		}
-	}
-	return abc.join("")
-}
-*/
 export class Search{
 	nk: io.NaiKeeper
 	text: string
@@ -121,18 +85,6 @@ if(require.main === module) {
 		s.doit()
 		s.show()
 	}
-
-	/*
-	let nk: io.NaiKeeper = new io.NaiKeeper("xxxx__xxxxxxKxxxxxxxxHJL__xxxx")
-
-	for(let i = 0; i < 10; i++){
-		const indv: string = search(nk)
-		const keys_to_show = nk.mizuni_modosu(indv.split(""))
-		console.log(keys_to_show)
-		console.log(ev.keys3x10(keys_to_show))
-		console.log(ev.evaluate(keys_to_show).cost_sum)
-	}
-	*/
 }
 
 
