@@ -46,6 +46,8 @@ if(require.main === module) {
 	disp_eval("QW___MRDYPAOEIUGTKSNZXCVFBHJL_", text)
 	console.log("Layout: Tomisuke")
 	disp_eval("1,.-;LRDYPAOEIUGNTSKXCVWQJHMBZ", text)
+	console.log("Layout: VRCHAT")
+	disp_eval("_WOUJBLYF_ASDEIRNTHMZXCV__KGPQ", text)
 	console.log("Layout: Ohashi rev1")
 	disp_eval("_WBF_MRDYPAOEUIGTKNSZXCV__HJLQ", text)
 	console.log("Layout: Ohashi rev2")
